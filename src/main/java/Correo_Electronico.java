@@ -1,7 +1,6 @@
 public class Correo_Electronico {
 	private String direccion;
 	private String proveedor;
-	public Persona usuario;
 
 	public String getDireccion() {
 		return this.direccion;

@@ -4,7 +4,8 @@ public class Persona {
 	private int rut;
 	private String nombre;
 	private String apellido;
-	public ArrayList<Automovil> auto = new ArrayList<Automovil>();
+	public ArrayList<Correo_Electronico> correos = new ArrayList<Correo_Electronico>();
+	public ArrayList<Automovil> autos = new ArrayList<Automovil>();
 
 	public int getRut() {
 		return this.rut;
