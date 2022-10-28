@@ -57,12 +57,6 @@ public class GestorPersonal {
             return null;
         }
 
-        public static void main(String [] args) {
-            inicializar();
-        }
-        public static void inicializar() {
-            Persona persona1 = new Persona(20106947-5, "Bastian","Vera",new Correo_Electronico( "vera.bastian99@gmail.com","Google"), new Automovil("Toyota", "Yaris",2017, 13000000));
-        }
     }
 
 }
