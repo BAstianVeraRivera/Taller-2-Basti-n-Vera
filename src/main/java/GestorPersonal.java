@@ -1,7 +1,17 @@
+import java.io.PrintStream;
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class GestorPersonal {
     public class Launcher {
+        private String nombreGestor;
+        public String getNombreGestor() {
+            return this.nombreGestor;
+        }
+
+        public void setNombreGestor(String nombreGestor) {
+            this.nombreGestor = nombreGestor;
+        }
         public ArrayList<Persona> personas = new ArrayList<Persona>();
         public ArrayList<Correo_Electronico> correos = new ArrayList<Correo_Electronico>();
         public ArrayList<Automovil> autos = new ArrayList<Automovil>();
@@ -24,7 +34,7 @@ public class GestorPersonal {
         public Persona buscarNombrePersonaPorNombre(String nombre) {
             for (Persona persona : this.personas) {
                 if (persona.getNombre().equals(nombre)) {
-                    return persona;
+                    System.out.println(persona);;
                 }
             }
             return null;
@@ -33,19 +43,26 @@ public class GestorPersonal {
         public Persona buscarPersonaPorRut(int rut) {
             for (Persona persona : this.personas) {
                 if (persona.getNombre().equals(rut)) {
-                    return persona;
+                    System.out.println(persona);;
                 }
             }
             return null;
         }
-        public Persona buscarPersonaPorAuto(Persona persona, Automovil auto){
+        public Persona buscarPersonaPorAuto(Automovil auto){
             for(Persona persona : this.personas){
                 if(persona.getNombre().equals(auto) && persona.getApellido().equals(auto)){
-                    return persona;
+                    System.out.println(persona);;
                 }
             }
             return null;
         }
 
+        public static void main(String [] args) {
+            inicializar();
+        }
+        public static void inicializar() {
+            Persona persona1 = new Persona(20106947-5, "Bastian","Vera",new Correo_Electronico( "vera.bastian99@gmail.com","Google"), new Automovil("Toyota", "Yaris",2017, 13000000));
+        }
     }
+
 }
