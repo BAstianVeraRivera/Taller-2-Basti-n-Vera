@@ -37,4 +37,10 @@ public class Automovil {
 	public void setPrecio(int precio) {
 		this.precio = precio;
 	}
+	public Automovil (String marca, String modelo, int añoFabricacion, int precio){
+		this.marca=marca;
+		this.modelo=modelo;
+		this.añoFabricacion=añoFabricacion;
+		this.precio=precio;
+	}
 }

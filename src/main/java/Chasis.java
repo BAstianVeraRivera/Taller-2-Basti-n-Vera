@@ -17,4 +17,8 @@ public class Chasis {
 	public void setMaterial(String material) {
 		this.material = material;
 	}
+	public Chasis (int nroChasis , String material){
+		this.nroChasis=nroChasis;
+		this.material=material;
+	}
 }

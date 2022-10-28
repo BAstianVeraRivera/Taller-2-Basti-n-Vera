@@ -17,4 +17,8 @@ public class Correo_Electronico {
 	public void setProveedor(String proveedor) {
 		this.proveedor = proveedor;
 	}
+	public Correo_Electronico (String direccion, String proveedor){
+		this.direccion=direccion;
+		this.proveedor=proveedor;
+	}
 }

@@ -17,4 +17,8 @@ public class Motor {
 	public void setCmCubicos(int cmCubicos) {
 		this.cmCubicos = cmCubicos;
 	}
+	public Motor (int nroMotor, int cmCubicos){
+		this.nroMotor=nroMotor;
+		this.cmCubicos=cmCubicos;
+	}
 }
