@@ -1,1 +1,1 @@
-Taller 2 de laboratorio de computación
+Taller 2 de laboratorio de computación para branch secundaria
